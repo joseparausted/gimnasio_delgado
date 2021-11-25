@@ -1,0 +1,459 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+@-webkit-keyframes animacionImagen {
+  from {
+  }
+  to {
+    -webkit-transform: scale(2, 1);
+            transform: scale(2, 1);
+  }
+}
+
+@keyframes animacionImagen {
+  from {
+  }
+  to {
+    -webkit-transform: scale(2, 1);
+            transform: scale(2, 1);
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .home-grip {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .home-grip {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .home-grip {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.menuPrincipal {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  list-style: none;
+  font-size: 0;
+}
+
+.menuPrincipal li {
+  display: inline;
+  border: 1px, black;
+  font-size: x-large;
+  font-family: arial, sans-serif;
+  border: 10px;
+  position: relative;
+}
+
+.menuPrincipal_li {
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.menuPrincipal li a:hover {
+  background-color: #434343;
+}
+
+.menuPrincipal > li {
+  float: left;
+}
+
+.menuPrincipal li a {
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+}
+
+.menuPrincipal li a:hover {
+  background-color: #434343;
+}
+
+.menuPrincipal li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+
+.menuPrincipal li:hover > ul {
+  display: block;
+}
+
+.menuPrincipal li ul li {
+  position: relative;
+  background-color: black;
+  color: white;
+  display: block;
+}
+
+.homeSection {
+  background-color: #000;
+}
+
+.homeSection_div1 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.527)), to(rgba(0, 0, 0, 0.5))), url(../images/gymhome.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../images/gymhome.jpg);
+  background-size: cover;
+  color: white;
+  font-size: xx-large;
+  text-align: center;
+  padding: 100px;
+  border: 10px;
+}
+
+.homeSection_div2 {
+  background-color: black;
+  background-size: cover;
+  color: white;
+  font-size: large;
+  text-align: center;
+  padding: 25px;
+}
+
+.homeSection_div3 {
+  background-color: black;
+  background-size: cover;
+  color: white;
+  font-size: large;
+  text-align: center;
+  padding: 25px;
+}
+
+.homeSection_div4 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.527)), to(rgba(0, 0, 0, 0.5))), url(../images/gymhome.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../images/gymhome.jpg);
+  background-size: cover;
+  color: white;
+  font-size: xx-large;
+  text-align: center;
+  padding: 100px;
+  border: 10px;
+}
+
+.homeSection--img {
+  height: 250px;
+  width: 500px;
+}
+
+.homeSection--cta:hover {
+  background-color: grey;
+  font-size: 120%;
+}
+
+.footer {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(grey));
+  background-image: linear-gradient(black, grey);
+  color: white;
+  padding-top: 20px;
+}
+
+.footer__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  list-style: none;
+}
+
+.footer__a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__li {
+  color: whitesmoke;
+  font-size: 70%;
+  text-decoration: none;
+}
+
+.footer__p {
+  text-align: center;
+  font-size: x-large;
+}
+
+.planes {
+  background-color: #000;
+}
+
+.planes__titulo {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.planes-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px;
+  background-color: #000;
+  color: white;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.planes--h3 {
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+.planes--ul {
+  list-style-image: url("https://img.icons8.com/ios-glyphs/30/ffffff/ok.png");
+}
+
+.planes--cta:hover {
+  background-color: gray;
+}
+
+.planes--precio {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: green;
+  font-size: x-large;
+  padding: 20px;
+}
+
+.clases {
+  background-color: #000;
+}
+
+.clases--grip {
+  display: -ms-grid;
+  display: grid;
+  justify-items: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  grid-gap: 10px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 10px;
+  background-color: #000;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #fff;
+}
+
+.clases__titulo {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.clases--cta:hover {
+  background-color: green;
+}
+
+.clases--h2 {
+  padding-bottom: 25px;
+}
+
+.clases--img {
+  border-radius: 8px;
+  width: 250px;
+  height: 100px;
+  padding-bottom: 50px;
+  -webkit-animation-name: animacionImagen;
+          animation-name: animacionImagen;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+.instalaciones {
+  background-color: black;
+  background-size: cover;
+  color: white;
+  font-size: large;
+  text-align: center;
+  padding: 25px;
+}
+
+.instalaciones__titulo {
+  padding: 10px;
+}
+
+.instalaciones--h {
+  padding-top: 30px;
+}
+
+.instalaciones--img {
+  height: 250px;
+  width: 500px;
+  -webkit-transition: height 3s, width 3s;
+  transition: height 3s, width 3s;
+  padding-bottom: 20px;
+}
+
+.instalaciones--img:hover {
+  height: 350px;
+  width: 600px;
+}
+
+.contacto {
+  background-color: black;
+  background-size: cover;
+  color: white;
+  font-size: large;
+  text-align: center;
+  padding: 25px;
+  border-color: white;
+}
+
+.contacto__form {
+  border-color: white;
+  border: 10px;
+  padding: 10px;
+}
+
+.contacto__titulo {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.contacto__img {
+  width: 500px;
+  height: 500px;
+  padding-top: 30px;
+}
+
+.clases__handStand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.clases__muscleUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.clases__frontLever {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.clases__pullPush {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.homeSection--cta {
+  text-align: center;
+  letter-spacing: 5px;
+  background-color: #0000;
+  color: white;
+  -webkit-transition: font-size 3s;
+  transition: font-size 3s;
+}
+
+.planes--cta {
+  text-align: center;
+  letter-spacing: 5px;
+  background-color: gray;
+  color: white;
+  -webkit-transition: font-size 3s;
+  transition: font-size 3s;
+}
+
+.clases--cta {
+  text-align: center;
+  letter-spacing: 5px;
+  background-color: #570404;
+  color: white;
+  -webkit-transition: font-size 3s;
+  transition: font-size 3s;
+}
+
+.instalaciones--cta {
+  text-align: center;
+  letter-spacing: 5px;
+  background-color: #030336;
+  color: white;
+  -webkit-transition: font-size 3s;
+  transition: font-size 3s;
+}
+/*# sourceMappingURL=style.css.map */

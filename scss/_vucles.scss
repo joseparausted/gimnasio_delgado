@@ -1,0 +1,19 @@
+@each $clases in handStand, muscleUp, frontLever, pullPush {
+    .clases__#{$clases}{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+     }
+ }
+ @each $pagina, $background-color in $colorcta{
+    .#{$pagina}--cta {
+        text-align: center;
+        letter-spacing: 5px;
+        background-color: $background-color;
+        color: white;
+        transition: font-size 3s;
+    }
+ }
+ 

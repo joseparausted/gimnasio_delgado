@@ -1,0 +1,78 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+#homeSection1 {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(../images/gymhome.jpg);
+    background-size: cover;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    padding: 100px;
+    border: 10px;
+}
+.cta{
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+.cta:hover{
+    background-color: gray;
+}
+#homeSection2 {
+    background-color: black;
+    background-size: cover;
+    color: white;
+    font-size: large;
+    text-align: center;
+    padding: 25px;
+    }
+#planes{
+    background-color: black;
+    background-size: cover;
+    color: white;
+    font-size: large;
+    text-align: center;
+    padding: 25px;
+}
+#tablaPlanes{
+    border: 2px white;
+    padding: auto;
+    border-spacing: 10px;
+    border-color: white;
+}
+th, tr, td{
+    text-align: center;
+    padding: 20px;
+}
+th{
+    font-size: xx-large;
+    background-color: grey;
+    color: black;
+}
+
+
+@keyframes animacionImagen{
+    from{}
+    to{
+        transform: scale(2,1);
+    }
+}
+@media only screen  and (min-width:320px){
+    .home-grip{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media only screen  and (min-width:768px){
+    .home-grip{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media only screen  and (min-width:1024px){
+    .home-grip{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+

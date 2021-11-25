@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Kalisten, el primer gimnasio de calistenia en México">
+    <meta name="keywords" content="Calistenia, clases de calistenia, gimnasio de calistenia">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Tag de Viewport -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- CDN de Bootstrap del CSS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!-- CDN de Bootstrap del JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script><!-- CDN de la librería de Jquery  -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> <!-- CDN de la librería de Popper  -->
+
+    <link rel="stylesheet" href="scss/style.css">
+    <title>Kalisten, Gimnasio calistenico</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menuPrincipal">
+                <li><a href="index.html" class="menuPrincipal__li">Home</a></li>
+                <li><a href="pages/planes.html" class="menuPrincipal__li">Planes</a>
+                <ul>
+                    <li><a href="pages/planes.html">Básico</a></li>
+                    <li><a href="pages/planes.html">Black</a></li>
+                    <li><a href="pages/planes.html">Online</a></li>
+                </ul></li>
+                <li><a href="pages/clases.html" class="menuPrincipal__li">Clases</a></li>
+                <li><a href="pages/instalaciones.html" class="menuPrincipal__li">Instalaciones</a></li>
+                <li><a href="pages/contacto.html" class="menuPrincipal__li">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container-fluid homeSection">
+    <div class="container-fluid homeSection_div1">
+        <h1 class="Home">Kalisten</h1>
+        <h3 class="lead">Primer gimnasio de Calistenia en México</h3>
+        <a href="pages/planes.html" class="homeSection--cta">Inscríbete</a>
+    </div>
+    <div class="row">
+        <div class="col-md-6 homeSection_div2">
+            <h2 class="Home">Qué es la calistenia?</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CVnuhVgRMyU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+            <a href="pages/clases.html" class="homeSection--cta">Reservar Clase</a>
+            <a href="pages/planes.html" class="homeSection--cta">Ver Planes</a>    
+        </div>
+        <div class="col-md-6 homeSection_div3">
+            <h2 class="Home">Todo lo que necesitas</h2>
+            <img src="images/gym3.jpg" alt="gym3" class="homeSection--img">
+        </div>
+    </div>
+    <div class="container-fluid homeSection_div4">
+        <h3 class="lead">Recibe las novedades y promociones exclusivas para ti</h3>
+        <form action="contacto.php" method="GET" enctype="application/x-www-form-urlencoded">
+             <input type="email" name="email_usuario" class="form-control" placeholder="ejemplo@hotmail.com"><br>
+             <input type="submit" value="Enviar formulario">
+          </form>
+    </div>
+    </section>
+    <footer class="footer">
+        <ul class="footer__ul">
+            <li><a href="index.html" class="footer__a">Kalisten</a>
+            <ul>
+                <li class="footer__li">¿Quiénes somos?</li>
+                <li class="footer__li">Instalaciones</li>
+            </ul></li>
+            <li><a href="pages/planes.html"class="footer__a" >Planes</a>
+                <ul>
+                    <li class="footer__li">Básico</li>
+                    <li class="footer__li">Black</li>
+                    <li class="footer__li">Online</li>
+                </ul></li>
+            <li><a href="pages/clases.html"class="footer__a">Clases</a><ul>
+                <li class="footer__li">Handstand</li>
+                <li class="footer__li">Front Lever</li>
+                <li class="footer__li">Full Planche</li>
+            </ul></li>
+            <li><a href="pages/instalaciones.html"class="footer__a">Instalaciones</a>
+                <ul>
+                <li class="footer__li">Sucursal CDMX</li>
+            </ul></li>
+            <li><a href="pages/contacto.html"class="footer__a">Contacto</a>
+                <ul>
+                <li class="footer__li">Pedir informes</li>
+            </ul></li>
+        </ul>
+        <p class=footer__p>Kalisten © 2021</p>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

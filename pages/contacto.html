@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ponte en contacto con Kalisten, resolveremos tus dudas">
+    <meta name="keywords" content="contacto Kalisten">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- CDN de Bootstrap del CSS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script><!-- CDN de la librería de Jquery  -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!-- CDN de Bootstrap del JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> <!-- CDN de la librería de Popper  -->
+    <link rel="stylesheet" href="../scss/style.css">
+    <title>Pointe en contacto con Kalisten</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menuPrincipal">
+                <li><a href="../index.html" class="menuPrincipal__li">Home</a></li>
+                <li><a href="planes.html" class="menuPrincipal__li">Planes</a>
+                    <ul>
+                    <li><a href="planes.html">Básico</a></li>
+                    <li><a href="planes.html">Black</a></li>
+                    <li><a href="planes.html">Online</a></li>
+                    </ul></li>
+                <li><a href="clases.html" class="menuPrincipal__li">Clases</a></li>
+                <li><a href="instalaciones.html" class="menuPrincipal__li">Instalaciones</a></li>
+                <li><a href="contacto.html" class="menuPrincipal__li">Contacto</a></li>
+        </nav>
+    </header>
+    <section class="container-fluid contacto">
+        <br><h1 class="contacto--titulo">Ponte en contacto con nosotros</h1>
+    <div class="row">
+        <form action="contacto.php" method="GET" enctype="application/x-www-form-urlencoded" class="col-md-6 contacto__form">
+            <label for="nombre_usuario">Nombre</label><br>
+            <input type="text" name="nombre_usuario"><br>
+            <label for="email_usuario">Email</label><br>
+            <input type="email" name="email_usuario"><br>
+            <label for="nombre_usuario">¿Eres cliente?</label><br>
+            <div>Sí</div>
+            <input type="radio" name="cliente" value="sí"><br>
+            <div>No</div>
+            <input type="radio" name="cliente" value="no"><br>
+            <label for="asunto">Asunto</label><br>
+            <select name="asunto">
+                <option value="starter" hidden>Seleccionar</option>
+                <option value="o1">Interesado en planes</option>
+                <option value="o2">Interesado en clases</option>
+                <option value="o3">Interesado en plan online</option>
+            </select><br>
+            <label for="comentario">Comentarios</label><br>
+            <textarea name="comentario" cols="30" rows="10">Deja un comentario</textarea><br><br>
+            <input type="submit" value="Enviar formulario">
+            <input type="reset" value="Limpiar formulario">
+         </form>
+        <div class="col-md-6">
+         <img src="../images/gymcontacto.jpg" alt="" class="contacto__img">
+        </div>
+    </div>
+</section>
+    <footer class="footer">
+        <ul class="footer__ul">
+            <li><a href="index.html" class="footer__a">Kalisten</a>
+            <ul>
+                <li class="footer__li">¿Quiénes somos?</li>
+                <li class="footer__li">Instalaciones</li>
+            </ul></li>
+            <li><a href="pages/planes.html"class="footer__a" >Planes</a>
+                <ul>
+                    <li class="footer__li">Básico</li>
+                    <li class="footer__li">Black</li>
+                    <li class="footer__li">Online</li>
+                </ul></li>
+            <li><a href="pages/clases.html"class="footer__a">Clases</a><ul>
+                <li class="footer__li">Handstand</li>
+                <li class="footer__li">Front Lever</li>
+                <li class="footer__li">Full Planche</li>
+            </ul></li>
+            <li><a href="pages/instalaciones.html"class="footer__a">Instalaciones</a>
+                <ul>
+                <li class="footer__li">Sucursal CDMX</li>
+            </ul></li>
+            <li><a href="pages/contacto.html"class="footer__a">Contacto</a>
+                <ul>
+                <li class="footer__li">Pedir informes</li>
+            </ul></li>
+        </ul>
+        <p class=footer__p>Kalisten © 2021</p>
+        </footer>
+</body>
+</html>
