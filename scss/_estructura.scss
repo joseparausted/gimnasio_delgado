@@ -23,6 +23,7 @@
         grid-template-columns: repeat(2,1fr);
     }
 }
+
 .menuPrincipal{
     background-color:black;
     position: fixed;
@@ -166,6 +167,9 @@
     padding-bottom: 25px;
     padding-top: 25px;
 }
+.planes--h2{
+    padding-top: 25px;
+}
 .planes--ul{
     list-style-image: url("https://img.icons8.com/ios-glyphs/30/ffffff/ok.png") ;
 }
@@ -193,6 +197,16 @@
     align-content: center;
     color: #fff;
  }
+ @media only screen  and (min-width:320px){
+    .clases--grip{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media only screen  and (min-width:768px){
+    .clases--grip{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
  .clases__titulo{
     padding-top: 50px;
     padding-bottom: 20px;

@@ -226,6 +226,10 @@
   padding-top: 25px;
 }
 
+.planes--h2 {
+  padding-top: 25px;
+}
+
 .planes--ul {
   list-style-image: url("https://img.icons8.com/ios-glyphs/30/ffffff/ok.png");
 }
@@ -260,6 +264,20 @@
   -ms-flex-line-pack: center;
       align-content: center;
   color: #fff;
+}
+
+@media only screen and (min-width: 320px) {
+  .clases--grip {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .clases--grip {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .clases__titulo {
