@@ -214,6 +214,10 @@
     color: white;
     text-align: center;
 }
+.planes--img{
+    width: 100%;
+    height: 50%;
+}
 .clases--cta:hover {
     background-color:green;
 }
@@ -247,6 +251,7 @@
 .instalaciones--img{
     height: 250px;
     width: 500px;
+    max-width: 100%;
     transition: height 3s, width 3s;
     padding-bottom: 20px;
 }
@@ -278,5 +283,6 @@
 .contacto__img{
     width: 500px;
     height: 500px;
+    max-width: 100%;
     padding-top: 30px;
 }

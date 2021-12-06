@@ -1,32 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Instalaciones de Kalisten, el primer gimnasio de calistenia en México">
-    <meta name="keywords" content="Barras, Paralelas, Dip station">
-    <link rel="stylesheet" href="../scss/style.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!-- CDN de Bootstrap del JS -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Kalisten, el primer gimnasio de calistenia en México">
+        <meta name="keywords" content="Calistenia, clases de calistenia, gimnasio de calistenia">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Tag de Viewport -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- CDN de Bootstrap del CSS -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!-- CDN de Bootstrap del JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script><!-- CDN de la librería de Jquery  -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> <!-- CDN de la librería de Popper  -->    
-    <title>InstalacioneS Kalisten </title>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> <!-- CDN de la librería de Popper  -->
+    
+        <link rel="stylesheet" href="../scss/style.css">
+     <title>InstalacioneS Kalisten </title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="menuPrincipal">
-                <li><a href="../index.html" class="menuPrincipal__li">Home</a></li>
-                <li><a href="planes.html" class="menuPrincipal__li">Planes</a>
-                    <ul>
-                    <li><a href="planes.html">Básico</a></li>
-                    <li><a href="planes.html">Black</a></li>
-                    <li><a href="planes.html">Online</a></li>
-                    </ul></li>
-                <li><a href="clases.html" class="menuPrincipal__li">Clases</a></li>
-                <li><a href="instalacion.html" class="menuPrincipal__li">Instalaciones</a></li>
-                <li><a href="contacto.html" class="menuPrincipal__li">Contacto</a></li>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="../index.html">Kalisten</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="../index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="clases.html">Clases</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Planes
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="planes.html">Básico</a>
+                    <a class="dropdown-item" href="planes.html">Black</a>
+                    <a class="dropdown-item" href="planes.html">Online</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="instalacion.html">Instalaciones</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
     </header>
     <div  class="instalaciones">
     <h1 class="instalaciones--h">Instalaciones ©</h1>
